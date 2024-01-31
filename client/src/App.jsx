@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+import LeafletComponent from './components/LeafletComponent'
 
 function App() {
-  const [longitide,setLongitude] = useState(null)
+  const [longitude,setLongitude] = useState(null)
   const [latitude,setLatitude] = useState(null)
   const [error,setError] = useState(null)
   useEffect(()=>{
@@ -20,10 +21,7 @@ function App() {
   },[])
   return (
     <>
-      <h1>Alester</h1>
-      <h1>{longitide}</h1>
-      <h1>{"latitide"+latitude}</h1>
-      <h1>{error}</h1>
+      <LeafletComponent lat={latitude} long={longitude}></LeafletComponent>
     </>
   )
 }
