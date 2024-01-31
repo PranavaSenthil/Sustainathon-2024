@@ -12,6 +12,9 @@ const LeafletComponent = (props) => {
       L.marker([props.lat, props.long]).addTo(map)
         .bindPopup(`Longitude : ${props.long}<br>Latitude : ${props.lat}`)
         .openPopup();
+      L.marker(["11.055608","76.99398"]).addTo(map)
+        .bindPopup(`Longitude : ${props.long}<br>Latitude : ${props.lat}`)
+        .openPopup();
     }
   }, [props.lat, props.long]);
 
