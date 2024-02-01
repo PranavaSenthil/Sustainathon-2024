@@ -1,0 +1,8 @@
+npm i
+npm i react-router
+
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+npm i flowbite-react
+npm install firebase
