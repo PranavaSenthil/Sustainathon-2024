@@ -4,6 +4,11 @@ import LeafletComponent from './components/LeafletComponent'
 import { BrowserRouter, Navigate, Route,Routes } from 'react-router-dom';
 import SignIn from './pages/SignIn'
 import SignUp from './pages/SignUp'
+import CreateProfile from './pages/CreateProfile';
+import Dashboard from './pages/Dashboard';
+import CreateBusinessDetails from './pages/CreateBusinessDetails';
+import CreateComProfile from './pages/CreateComProfile';
+import NearestSuburbanFinder from './components/NearestSuburbanFinder'
 
 function App() {
   // const [longitude,setLongitude] = useState(null)
@@ -30,6 +35,11 @@ function App() {
             <Route path='/' element={<Navigate to="/sign-in"/>}></Route>
             <Route path='/sign-in' element={<SignIn/>}></Route>
             <Route path='/sign-up' element={<SignUp/>}></Route>
+            <Route path='/create-profile' element={<CreateProfile/>}></Route>
+            <Route path='/dashboard' element={<Dashboard/>}></Route>
+            <Route path='/business-details' element={<CreateBusinessDetails/>}></Route>
+            <Route path='/owner-details' element={<CreateComProfile/>}></Route>
+            <Route path="/location" element={<NearestSuburbanFinder/>}></Route>
         </Routes>
       </BrowserRouter>
     </>

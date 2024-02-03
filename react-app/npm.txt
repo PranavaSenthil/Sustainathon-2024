@@ -1,3 +1,4 @@
+npm create vite@latest
 npm i
 npm i react-router
 
@@ -6,3 +7,9 @@ npx tailwindcss init -p
 
 npm i flowbite-react
 npm install firebase
+npm install react-redux
+
+npm install @reduxjs/toolkit
+npm i redux-persist
+
+npm install react-icons @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome

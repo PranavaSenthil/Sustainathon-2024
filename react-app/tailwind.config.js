@@ -13,7 +13,8 @@ export default {
           "F0EFFF" : "#F0EFFF",
           "6359D8" : "#6359D8",
           "button" : "#7467F0",
-          "bg" : "#fefefe"
+          "bg" : "#fefefe",
+          "bg-2" : "#fafafa"
         },
       },
   },
